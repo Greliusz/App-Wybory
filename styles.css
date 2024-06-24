@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.status-green, .status-red {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.status-green {
+    background-color: green;
+}
+
+.status-red {
+    background-color: red;
+}
+
+.main-container {
+    text-align: center;
+    background-color: #bcc0c3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Dodajemy ograniczenie szerokości */
+    max-width: 800px; /* Maksymalna szerokość */
+}
+
+.tables-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    gap: 10px; /* Dodajemy odstęp między tabelami */
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Pozwala tabelom na elastyczną szerokość */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+hr.section-divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+.vote, .add, .auth {
+    margin-top: 20px;
+}
+
+form {
+    margin: 10px 0;
+}
+
+.auth a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+.login-container, .main-container, .vote, .add {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.login-container h2, .main-container h2, .vote h2, .add h2 {
+    margin-bottom: 20px;
+}
+
+.login-container label, .main-container label, .vote label, .add label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.login-container input, .main-container input, .vote select, .add input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.login-container button, .main-container button, .vote button, .add button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-container button:hover, .main-container button:hover, .vote button:hover, .add button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
